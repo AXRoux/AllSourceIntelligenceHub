@@ -1,0 +1,29 @@
+No secrets files found. Valid paths for a secrets.toml file are: /home/runner/.streamlit/secrets.toml, /home/runner/AllSourceIntelligenceHub/.streamlit/secrets.toml
+
+FileNotFoundError: No secrets files found. Valid paths for a secrets.toml file are: /home/runner/.streamlit/secrets.toml, /home/runner/AllSourceIntelligenceHub/.streamlit/secrets.toml
+Traceback:
+File "/home/runner/AllSourceIntelligenceHub/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 565, in _run_script
+    exec(code, module.__dict__)
+File "/home/runner/AllSourceIntelligenceHub/pages/06_real_time_intel.py", line 52, in <module>
+    data = fetch_news_data()
+           ^^^^^^^^^^^^^^^^^
+File "/home/runner/AllSourceIntelligenceHub/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/caching/cache_utils.py", line 194, in wrapper
+    return cached_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/AllSourceIntelligenceHub/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/caching/cache_utils.py", line 223, in __call__
+    return self._get_or_create_cached_value(args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/AllSourceIntelligenceHub/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/caching/cache_utils.py", line 248, in _get_or_create_cached_value
+    return self._handle_cache_miss(cache, value_key, func_args, func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/AllSourceIntelligenceHub/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/caching/cache_utils.py", line 302, in _handle_cache_miss
+    computed_value = self._info.func(*func_args, **func_kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/AllSourceIntelligenceHub/pages/06_real_time_intel.py", line 27, in fetch_news_data
+    api_key = st.secrets["NEWS_API_KEY"]
+              ~~~~~~~~~~^^^^^^^^^^^^^^^^
+File "/home/runner/AllSourceIntelligenceHub/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/secrets.py", line 305, in __getitem__
+    value = self._parse(True)[key]
+            ^^^^^^^^^^^^^^^^^
+File "/home/runner/AllSourceIntelligenceHub/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/secrets.py", line 214, in _parse
+    raise FileNotFoundError(err_msg)
