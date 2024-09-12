@@ -21,6 +21,7 @@ Welcome to the All-Source Intelligence Dashboard. This application provides an i
 - Various intelligence sources and their limitations
 - Source blending techniques and their pros and cons
 - Bridging the gap between analysts and policymakers
+- Advanced machine learning analysis for intelligence reports, including Random Forest classification and feature importance
 
 Navigate through the pages using the sidebar to explore each topic in detail.
 """)
