@@ -38,7 +38,7 @@ Navigate through the different pages using the sidebar:
 Contributions to improve the All-Source Intelligence Hub are welcome. Please follow the standard fork-and-pull request workflow.
 
 ## License
-[Insert appropriate license information here]
+MIT License
 
 ---
 
