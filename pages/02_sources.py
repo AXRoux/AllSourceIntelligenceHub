@@ -97,7 +97,7 @@ using multiple sources in All-Source Intelligence.
 ---
 
 For more information on the principles and practices of All-Source Intelligence, check out the 
-[All-Source Intelligence Manifesto](https://example.com/all-source-intelligence-manifesto).
+[All-Source Intelligence Manifesto](https://medium.com/dead-drop/the-all-source-intelligence-analyst-manifesto-8f19f6e23e7c).
 """)
 
 if __name__ == "__main__":
