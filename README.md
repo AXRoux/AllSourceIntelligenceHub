@@ -36,6 +36,7 @@ Navigate through the different pages using the sidebar:
 
 ## Contributing
 Contributions to improve the All-Source Intelligence Hub are welcome. Please follow the standard fork-and-pull request workflow.
+My API Key is still there it's non-paid for so, if you run out of the daily rate, replace it with your own.
 
 ## License
 MIT License
