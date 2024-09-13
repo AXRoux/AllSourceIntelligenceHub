@@ -6,3 +6,5 @@ streamlit-extras==0.2.7
 numpy==1.26.0
 nltk
 scikit-learn
+plotly
+wordcloud

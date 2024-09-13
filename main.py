@@ -49,12 +49,20 @@ for alert in alerts:
 # Quick Navigation
 st.subheader("Quick Navigation")
 col1, col2, col3 = st.columns(3)
+
+def navigate_to_page(page_name):
+    st.session_state.page = page_name
+    st.experimental_rerun()
+
 with col1:
-    st.button("View Detailed Reports")
+    if st.button("View Detailed Reports"):
+        navigate_to_page("Overview")
 with col2:
-    st.button("Run ML Analysis")
+    if st.button("Run ML Analysis"):
+        navigate_to_page("ML Analysis")
 with col3:
-    st.button("Access Real-Time Intel")
+    if st.button("Access Real-Time Intel"):
+        navigate_to_page("Real-Time Intelligence")
 
 st.sidebar.success("Select a page above for detailed analysis.")
 
