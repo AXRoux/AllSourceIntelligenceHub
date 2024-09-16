@@ -41,6 +41,6 @@ My API Key is still there it's non-paid for so, if you run out of the daily rate
 ## License
 MIT License
 
----
+----
 
 Designed by Vance Poitier
